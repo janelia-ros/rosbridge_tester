@@ -19,3 +19,13 @@ catkin_make
 source devel/setup.bash
 roslaunch rosbridge_tester rosbridge_tester.launch
 ```
+
+```shell
+rqt_console
+```
+
+```shell
+cd catkin_ws/
+source devel/setup.bash
+rostopic pub -1 /chatter std_msgs/String "test"
+```
