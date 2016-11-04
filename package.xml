@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+  <name>rosbridge_tester</name>
+  <version>0.0.0</version>
+  <description>The rosbridge_tester package</description>
+
+  <maintainer email="polidorop@janelia.hhmi.org">Peter Polidoro</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">https://github.com/janelia-ros/rosbridge_tester</url>
+  <url type="bugtracker">https://github.com/janelia-ros/rosbridge_tester/issues</url>
+  <url type="repository">https://github.com/janelia-ros/rosbridge_tester</url>
+
+  <author email="polidorop@janelia.hhmi.org">Peter Polidoro</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rosbridge_server</build_depend>
+  <build_depend>rospy</build_depend>
+  <run_depend>rosbridge_server</run_depend>
+  <run_depend>rospy</run_depend>
+
+
+  <export>
+  </export>
+</package>
