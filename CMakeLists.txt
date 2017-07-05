@@ -7,7 +7,10 @@ project(rosbridge_tester)
 find_package(catkin REQUIRED COMPONENTS
   rosbridge_server
   rospy
+  roslaunch
 )
+
+roslaunch_add_file_check(launch)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)

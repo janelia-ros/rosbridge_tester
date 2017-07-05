@@ -29,3 +29,7 @@ cd catkin_ws/
 source devel/setup.bash
 rostopic pub -1 /chatter std_msgs/String "test"
 ```
+
+Open a web browser and navigate to:
+
+    http://localhost:5000/

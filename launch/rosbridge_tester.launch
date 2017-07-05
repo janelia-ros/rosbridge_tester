@@ -2,4 +2,6 @@
   <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
   <node pkg="rosbridge_tester" type="listener.py" name="rosbridge_tester_listener" >
   </node>
+  <node pkg="rosbridge_tester" type="web_gui.py" name="rosbridge_tester_web_gui" >
+  </node>
 </launch>
