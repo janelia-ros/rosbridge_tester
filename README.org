@@ -1,14 +1,14 @@
-#rosbridge_tester
+#+TITLE: rosbridge_tester
+#+AUTHOR: Peter Polidoro
+#+EMAIL: peterpolidoro@gmail.com
 
-Authors:
+* Package Information
+  - Author :: Peter Polidoro
+  - License :: BSD
 
-    Peter Polidoro <polidorop@janelia.hhmi.org>
+* Running
 
-License:
-
-    BSD
-
-```shell
+  #+BEGIN_SRC sh
 sudo apt-get install ros-kinetic-rosbridge-server
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
@@ -18,18 +18,18 @@ cd ~/catkin_ws/
 catkin_make
 source devel/setup.bash
 roslaunch rosbridge_tester rosbridge_tester.launch
-```
+  #+END_SRC
 
-```shell
+  #+BEGIN_SRC sh
 rqt_console
-```
+  #+END_SRC
 
-```shell
+  #+BEGIN_SRC sh
 cd catkin_ws/
 source devel/setup.bash
 rostopic pub -1 /chatter std_msgs/String "test"
-```
+  #+END_SRC
 
-Open a web browser and navigate to:
+  Open a web browser and navigate to:
 
-    http://localhost:5000/
+  [[http://localhost:5000/]]
